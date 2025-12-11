@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <style>
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            border: 3px solid black;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            margin: 20px;
+            padding: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <div class="card">
+        <h2>Product 1</h2>
+        <p>Sleek design</p>
+        <p>Price : 799</p>
+        <img src="image.jpeg">
+    </div>
+
+    <div class="card">
+        <h2>Product 2</h2>
+        <p>Sleek design</p>
+        <p>Price : 799</p>
+        <img src="image.jpeg">
+    </div>
+
+    <div class="card">
+        <h2>Product 3</h2>
+        <p>Sleek design</p>
+        <p>Price : 799</p>
+        <img src="image.jpeg">
+    </div>
+
+    <div class="card">
+        <h2>Product 4</h2>
+        <p>Sleek design</p>
+        <p>Price : 799</p>
+        <img src="image.jpeg">
+    </div>
+</div>
+
+</body>
+</html>
